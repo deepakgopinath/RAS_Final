@@ -1,0 +1,47 @@
+﻿We would like to thank the reviewers for their time and valuable feedback.  We appreciate all of the comments, and believe addressing them will make for a stronger paper. We hope that our text below will help to clarify the majority of the reviewers' concerns. 
+
+
+-- As an alternative to the C* algorithm, to instead modify “the heuristic costs of standard planning algorithms to penalize the transitions between the moving states and the stopping/rotating states". (Reviewer 1)
+
+We agree this could provide an alternative solution. Such an implementation would require two important modifications to standard planning algorithms. (The hierarchical FSM (HFSM) serves to address both of these modifications in the C* algorithm.):
+
+(1) The first modification would be to encode the current action within the planning state space (e.g. moving/stopping/rotating). A straightforward approach is to simply encode the current action (let's call this the “actionState”; equivalent to “low-level state” in Table 1) within an additional state dimension. In C* this additional dimension instead encodes the harel state. The number of actionStates is necessarily greater than the number of harel states (since each harel state is a grouping of actionStates), and thus so too would the search space expansion be greater. The impact in terms of computational tractability would, of course, be problem-specific.
+
+(2) The second modification would be to exhaustively specify a cost for each actionState-actionState transition. For N actions (and N actionStates), this results in N*N assignments (since self-transitions are possible). By contrast under C*, what needs to be specified is the transition costs between M harel states ((M-1)*(M-1) assignments) and between actionStates within a given harel state (at fewest 1 and at most N-M+1 assignments, for each of N actionStates). By observing that M<=N-1 and 2<=M, we can prove that the number of elements to specify for a C* (HFSM) cost function (at fewest N*1 + (M-1)*(M-1) and at most N*(N-M+1) + (M-1)*(M-1)) is always less than what needs to be specified without the HFSM structure (N*N).
+
+Thus, the HFSM serves two purposes: (1) to mitigate the state space expansion explosion, and (2) to simplify the complexity of the cost function.
+
+We agree that it is important to clearly spell out what is gained by the HFSM formulation, and will add a summary of the above to the final version of the paper.
+
+
+-- Lacking clarity about "how the idea generalizes to other control interfaces". (Reviewer 1)
+
+We expect the HFSM formulation to generalize to other control interfaces with operational constraints, encoded as between-harel-state transitions. While defining an HFSM that effectively captures these constraints will be interface-specific, we can identify a few broad categories, namely: (1) When there is a mismatch in the dimensionality of the interface (lower) and the control space of the robot (higher). These interfaces require methods (e.g. buttons) of switching between control mappings (i.e. to different subspaces of the robot control space). Actions that require a switch are inherently more expensive than actions that do not require a switch. The harel statechart can be built along these lines, grouping actions that do not require a switch into a single harel state. (2) Where taking the same action from different actionStates incurs different costs. For example, some actions are inherently riskier to perform at high speeds (e.g. for robotic systems with complex dynamics like quadcopters).
+
+We agree that providing a concrete vision for how the formulation would generalize to other interfaces is key, and will include this text in the paper.
+
+
+-- The choice of evaluation metrics. (Reviewer 2)
+
+For the heading-agreement metric, we understand the reviewer's concern in comparing global-level and execution-level plans---since disagreements could be due to instantaneous variability in the local control. However, we do still believe there is a meaningful parallel to be drawn, simply because a local planner executing a global plan with good agreement is still likely to be more similar to the human-generated path than the same local planner executing a global plan with poor agreement. We intentionally chose not to introduce a local planner since this would somewhat mask the global plans.
+
+The number-of-turns metric in fact does not directly measure what we wish to measure---which is the difficulty of operating the interface. The challenge is that “difficulty” is essentially a latent variable. We do know from our pilot study (and post-study questionnaire) that any interaction with the interface---and especially the continuous signal necessary for turning---was considered less preferential to remaining in one of the two latched states. We therefore chose number-of-turns as a related, observable variable.
+
+The reviewer also notes marked path differences that were not discussed, like how close the automated planners got to walls. This particular difference was primarily caused by the fact that the planners do not take into account any system dynamics. Incorporating dynamics indeed would be interesting future work.
+
+
+--  Additional comments.
+
+Reviewers 2 and 3 mention a desire to see our work on a real physical platform and full end-to-end shared control system. Both are excellent suggestions, and in fact under active development in our lab. For this first evaluation, we chose a simulated environment intentionally, to reduce study condition variability (such as starting position, environment map).
+
+All smaller clarifications requested by Reviewer 2 will be included in the final paper. To elaborate: 
+
+- \alpha_I and \alpha_E are the costs associated with internal and external harel state transitions. (In our implementation, \alpha_I=1 and \alpha_E=2.)
+
+- The robot turning and moving forward at the same time is not represented as a distinct state, but rather as taking a turning action (a_3 or a_4) while in the (latched) moving forward (S1) state. This should be annotated by action a_3 (and a_4) being a self-loop on state S1, and indeed was omitted in error from the harel state chart schematic (Figure 3). (It is properly represented in the full state diagram, Figure 2, and discussed further in footnote 1.)
+
+- Figure 5 shows 2D A*. 
+
+
+We again thank the reviewers for their attention, and look forward to their reply.
+

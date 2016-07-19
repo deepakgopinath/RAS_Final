@@ -1,0 +1,99 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{rich2005buddy}
+B.~Rich, H.~Adler, Buddy Rich's modern interpretation of snare drum rudiments,
+  Amsco Music, 2005.
+
+\bibitem{kapur2007comparison}
+A.~Kapur, E.~Singer, A.~Suleman, G.~Tzanetakis, A comparison of solenoid-based
+  strategies for robotic drumming, International Computer Music Conference,
+  2007.
+
+\bibitem{hajian1997drum}
+A.~Z. Hajian, D.~S. Sanchez, R.~D. Howe, Drum roll: Increasing bandwidth
+  through passive impedance modulation, in: Proceedings of IEEE International
+  Conference on Robotics and Automation, Vol.~3, 1997.
+
+\bibitem{berdahl2007physically}
+E.~Berdahl, B.~Verplank, J.~O. Smith, G.~Niemeyer, A physically-intuitive
+  haptic drumstick, in: Proceedings of the International Computer Music
+  Conference, 2007.
+
+\bibitem{kim2014drum}
+Y.~G. Kim, M.~Garabini, J.~Park, A.~Bicchi, Drum stroke variation using
+  variable stiffness actuators, in: IEEE International Conference on
+  Intelligent Robots and Systems (IROS), 2014.
+
+\bibitem{wagner2006analysis}
+A.~Wagner, Analysis of drumbeats--interaction between drummer, drumstick and
+  instrument, Master's Thesis, KTH Computer Science and Communication, 2006.
+
+\bibitem{weinberg2006robot}
+G.~Weinberg, S.~Driscoll, Robot-human interaction with an anthropomorphic
+  percussionist, in: Proceedings of the SIGCHI conference on Human Factors in
+  computing systems, ACM, 2006.
+
+\bibitem{weinberg2005haile}
+G.~Weinberg, S.~Driscoll, M.~Parry, Haile- {A} {P}erceptual {R}obotic
+  {P}ercussionist, International Computer Music Conference, 2005.
+
+\bibitem{weinberg2006toward}
+G.~Weinberg, S.~Driscoll, Toward robotic musicianship, Comp. Music. J. 30~(4)
+  (2006) 28--45.
+
+\bibitem{weinberg2007real}
+G.~Weinberg, M.~Godfrey, A.~Rae, J.~Rhoads, A real-time genetic algorithm in
+  human-robot musical improvisation, in: Computer music modeling and retrieval.
+  Sense of sounds, Springer, 2007, pp. 351--359.
+
+\bibitem{weinberg2006jam}
+G.~Weinberg, S.~Driscoll, T.~Thatcher, Jam'aa-a middle eastern percussion
+  ensemble for human and robotic players, in: International computer music
+  conference, 2006.
+
+\bibitem{nikolaidis2010playing}
+R.~Nikolaidis, G.~Weinberg, Playing with the masters: {A} model for
+  improvisatory musical interaction between robots and humans, in: IEEE RO-MAN,
+  2010.
+
+\bibitem{weinberg2009interactive}
+G.~Weinberg, A.~Raman, T.~Mallikarjuna, Interactive jamming with shimon: a
+  social robotic musician, in: Proceedings of the 4th ACM/IEEE {I}nternational
+  {C}onference on Human robot interaction, 2009.
+
+\bibitem{degallier2006movement}
+S.~Degallier, C.~P. Santos, L.~Righetti, A.~Ijspeert, Movement generation using
+  dynamical systems: a humanoid robot performing a drumming task, in: 6th
+  IEEE-RAS International Conference on Humanoid Robots, 2006.
+
+\bibitem{brooks1999cog}
+R.~A. Brooks, C.~Breazeal, M.~Marjanovi{\'c}, B.~Scassellati, M.~M. Williamson,
+  The cog project: Building a humanoid robot, in: Computation for metaphors,
+  analogy, and agents, Springer, 1999, pp. 52--87.
+
+\bibitem{hajian1997characterization}
+A.~Z. Hajian, A characterization of the mechanical impedance of human hands,
+  PhD Thesis, Harvard University, 1997.
+
+\bibitem{edakkattil2015enhancing}
+D.~Gopinath, Enhancing stroke generation and expressivity in robotic drummers-a
+  generative physics model approach, Master's Thesis, Georgia Institute of
+  Technology, 2015.
+
+\bibitem{tryon2001evaluating}
+W.~W. Tryon, Evaluating statistical difference, equivalence, and indeterminacy
+  using inferential confidence intervals: an integrated alternative method of
+  conducting null hypothesis statistical tests., Psychol. Methods 6~(4) (2001)
+  371.
+
+\bibitem{tryon2008inferential}
+W.~W. Tryon, C.~Lewis, An inferential confidence interval method of
+  establishing statistical equivalence that corrects tryon's (2001) reduction
+  factor., Psychol. Methods 13~(3) (2008) 272.
+
+\end{thebibliography}

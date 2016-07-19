@@ -1,0 +1,58 @@
+﻿We would like to thank the reviewers for their time and valuable feedback. All typos and minor clarifications will be addressed. A discussion of the more major reviewer concerns is provided below, which we hope will help to clarify many of the reviewers' concerns.
+
+
+Experiments and results:
+
+
+-- What is [][F[][]=0.03] of Section VI.B. (R2)
+
+Please excuse our oversight in reporting this data. The numbers which were meant to be reported are a statistically significant difference between groups in time completion with the joystick [F(5,15) = 3.152 p=0.038] and head array [F(5,15) = 4.854 p=0.007], and also for the Ratio of Autonomy with the joystick [F(5,15) = 40.312 p<0.001] and head array [F(5,15) = 9.803 p<0.001]. All will be reported in the final paper.
+
+
+-- Experiment are without patients (R1), with lab members (R3) and just with four people (R2). Results are preliminary (R1, R2) and not supported by statistical considerations (R3).
+
+We agree that trials with real end-users is critical (and since submitting the paper in fact have begun trials with spinal cord injured subjects). We do note however that using control group results in early publications that describe the system design and preliminary results is quite frequent; as indeed was done in the IROS paper mentioned by reviewer R1. Our aim in this paper is to motivate the comparative study between different control sharing paradigms, by presenting our modular system and provide preliminary data that indeed shows differences between subjects, sharing paradigms and control interfaces.
+
+Some of our statistical analyses were mistakenly omitted (please see above). The asterisks/cross/diamonds annotations in Figures 7-8 also indicate statistical significance, which will be explained more clearly in the final paper.
+
+We also have run the analyses in Figures 7-9 on the subject data (2 uninjured, 1 spinal cord injured C-6 incomplete) gathered since submitting the paper, and overall  we find... Specifically... (If the reviewers would like to see these numbers updated in the paper, we would be happy to do so.) 
+
+
+-- Whether preliminary results with uninjured subjects provide any insight and motivation for the deeper exploration. (R1) 
+
+We wholeheartedly agree that testing with non-users does not provide conclusive "insight into control policies, or the human-interface aspects" for end-users. Our intent was not to suggest any conclusive recommendations on policies or interfaces, but rather only to observe that we do see differences---in autonomy behavior with different control interfaces, and in user effort with different interfaces and sharing paradigms. While we do anticipate that this effect is likely amplified with real end-users (since they if anything are more susceptible to limitations in a control interface), this of course can only be confirmed or refuted by a study with real end-users. As the reviewer notes, we only claim that our observations serve to support a deeper exploration of these factors. 
+
+
+-- Whether the order of control interfaces and control paradigms is randomized. (R2)
+
+To simplify the task of performing comparisons to indicate a preference, our study design groups together the presentation of control interface and randomizes the presentation of control paradigms. (Subjects in the full study then indicate their preferred control paradigm, for a given interface.) Specifically, subjects first evaluate the joystick and then the head array. This indeed could introduce learning artifacts in favor of the head array, however our experimental results indicate no such learning.
+
+
+-- The experiments are done without fully considering different user interfaces; so the role of the user interface in obtaining the results is not clear. (R3)
+
+Existing commercial interfaces can roughly be categorized into two groups: those that allow for continuous-valued control, and those which allow only for discrete switch-based control. From the standpoint of the control algorithm, all interfaces within a given group are equivalent in the information they provide (though of course how well the user is able to interact with different interfaces within a single group may vary dramatically). Our experimental work accordingly makes use of one interface from each group: a 2-axis joystick (continuous) and a head array (discrete). 
+
+
+
+Control Strategies:
+
+-- A more careful analysis of factors that affect preference, beyond the reported measurable quantities. (R2)
+
+We entirely agree. Our full study (currently underway) polls subjects for their impressions about the utility of a given control sharing paradigm, how capable they consider the robot to be, whether they trust the robot, which is their preferred control sharing paradigm, etc. (Our preliminary data however gathered this information only informally.)
+
+
+-- What are the motivations for selecting the five strategies. (R2)
+
+Our choice of control sharing paradigms aimed at covering a broad portion of the paradigms reported in the literature---with regards to how the autonomy signals are generated in the first place, and the way control sharing is handled. To recap the summary in Section II, filtering the user command has been implemented within planner-based [5] and potential field [22] approaches, and works also continuously blend commands [11] and implement full autonomy [15]. An advantage to implementing all of these paradigms in a single system is that it allows for a direct comparison between them.
+
+
+-- Why does a three-layer architecture not work for this context. (R2)
+
+In many ways our software framework is a similar architecture to three-layered one. The key differences introduced arise primarily from the interaction with the human---most notably, the command arbitration module is added to reason about the interaction between the autonomy commands and the human's teleoperation commands. 
+
+
+Literature and additional analysis
+
+-- Missing reference and comparison to the CanWheel project, especially their end-user Wizard-of-Oz studies. (R1)
+
+Reference to the CanWheel project was a grievous oversight on our part, and we thank the reviewer for this comment. The cited Wizard-of-Oz study indeed does also aim to explore the question of different control sharing paradigms, and reference to it will be included in our final paper. This study differs from ours in many important ways however: (1) the autonomy control does not actually involve any robotics autonomy, but rather is performed by a second human teleoperator, (2) the study is performed entirely in simulation, (3) only a single interface is used and (4) no quantitative data is reported. A primary focus of our study is to look at the interplay between control interface and autonomy paradigm (which considers the source of the autonomy signal (nullified in a Wizard-of-Oz study) in addition to the control sharing paradigm), with all of the quirks and failures that arise from real-world operation.

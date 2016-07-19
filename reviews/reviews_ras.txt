@@ -1,0 +1,148 @@
+Reviewers' comments:
+Guest reviewers' comments:
+Review of the paper, "Enhancing Musical Expressivity in Robotic Drummers - A Physical Model Approach ," by Gopinath and Weinberg, is complete. Based on reviewers' comments, and on our own reading, the paper is to be accepted for publication in Robotics and Autonomous Systems pending appropriate major revision. The manuscript embodies a topic which is at fairly central to the call for papers of this special issue. Despite this, the reviewers have provided quite a few points which we would like to ask the authors to address. 
+
+It has been suggested that the authors should firm up their argumentation. #Argumentation, for design choices and approach and assumptions?
+The main technical contribution should be stated more clearly and related to the relevant literature. #Using a general physical model to generate the strokes, as opposed to learning from video or audio data. The infinite variations can be captured this way. 
+
+Also, the authors are asked to improve the results section. #Possibly improving the analysis part of things. 
+
+****************************************************************************************************************************
+Reviewer #1:
+Page 2: The author stated that the proposed work in this paper aims to develop a generative model that captures the physics of a drum stroke
+(primarily focusing on multiple bounce strokes) as performed by a human drummer and implement the model in a robotic drummer through a proper
+controller design.  However, in the section 2, the authors have ommited relevant related work (see below some examples) that is related to both
+physical model as well as robotic implementation. Therefore, the authors should clearly indicate the main technical contribution respect to the
+revelant related work. Furthermore, the author stated that none of the robot percussionists have been designed to produce double strokes
+or other kinds of expressive multiple striking techniques. However, the author should consider the work presented by Bicchi (2014),
+where double strokes with different stiffness settings have been realized by a robot system (actuator + physical model and control strategy).
+
+
+Robot Implementaion / Dynamic Model:
+- Bicchi, A.: Drum Stroke Variation using Variable Stiffness Actuators - **
+
+IROS2014, pp. 3892 - 3897 (2014)
+
+- Ijspeert, A.: Movement generation using dynamical systems:a humanoid robot performing a drumming task,
+  International Conference on Humanoid Robots, pp. 512-517 (2006) -**
+
+- Williamson, M. M., Robot Arm Control Exploiting Natural Dynamics,
+  Ph.D. Thesis: MIT, 1999 - **
+
+- Kotosaka, S. and Schaal, S.: Synchronized Robot Drumming with Neural Oscillators
+  International Symposium on Adaptive Motion of Animals and Machines, 2000.
+
+
+Physical Model:
+- Dahl, S.: Playing the Accent - Comparing Striking Velocity and
+  Timing in an Ostinato Rhythm Performed by Four Drummers. Acta Acustica
+  united with Acustica Vol. 90, pp.762-776, 2004.
+
+- Garder, A.: Physical modeling of percussion instruments.", Master's Thesis, 2005.
+
+- Wagner, A.: Analysis of Drumbeats - Interaction between Drummer, Drumstick and Instrument.", Master's Thesis, 2006 - **
+
+Section 3:
+
+- The authors should provide further descriptions regarding the argumentations behind the choices while simplifying the model, e.g.
+why an inelastic collision has been considered? wouldn't be possible to consider the bouncing dynamics by considering an elastic collision)?
+Would be possible to express mathematically an approximation to the coefficient of restitution?
+
+Resolved. 
+
+- The authors only indicate that a PID controller has been implemented but without giving details of the control system implemented,
+e.g. wouldn't be possible to include a block diagram of the control system? how the control gain parameters have been tunned?
+
+Make block diagram
+
+- The authors should provide a short description of the mechanism for the percusionist robot so it is possible to understand the
+the relation between the simplified model, the control system and the simulations.
+
+(How are the stroke profiles implemented. short description. 
+
+Section 4:
+
+- The authors should better describe the main objective for the simulation experiments presented. Furthermore, it is not clear how the simulation has been
+  implemented.
+- The simulation experiments should be discussed in detail and compare with other related works, e.g. Bicchi (2014), etc.
+- Wouldn't be possible to compare the boucing frequency in a quantitative way (e.g. by means of FFT)? (Not needed, as subjective evaluation is the most important part). 
+
+Section 5:
+- It is rather difficult to understand how the robotic drummer has been programmed to play 
+ kinds of strokes, e.g. what does exactly means
+  that the robotic drummer playing a similar type of multiple bounce stroke based on our model? 
+
+A. (clarify how the stroke profiles have been executed on the device. and the wording)
+
+  The authors should better include the technical details to understand the main technical contribution from the authors before going directly
+  to the evaluation of the proposed method, e.g. how the coefficient of restitution has been tunned?, which parameters settings were varied?, etc. 
+
+A . (Can be rephrased and emphasized. Because it was all done). 
+
+- The reviewer suggest to include a quantitative analysis (e.g. who the authors have tested the performance of the controller, what is the error achieved
+  in terms of desired stroke frequency and the actual achieved one by the robotic drummer, etc.) before presenting the qualitative analysis. 
+
+A. (this will be hard because we need hardware). How can we address this. 
+
+- The authors should re-phrase this sentence for better understanding: "If the model was successful in emulating a human drum stroke completely,
+  then the expected value for the number of incorrect answers would have been 5". 
+
+A. Clarify the motivation behind doing simulations. 
+
+- The authors stated that "the statistical analysis of the results indicates that the generative physics model and its implementation in the RDP
+  was successful in creating humanlike multi-stroke drumming expression". However, it is rather difficult to understand the argumentations behind
+  this statement from the physical point of view, e.g. robot side: desired bouncing frequency vs. detected bouncing frequency as well as
+  human to robot comparison: detected bouncing frequency for the human performer vs. detected bouncing frequency for the robot performer, etc.
+
+
+A.Can rephrase this.  How can we emphasize the fact that the perceptual similarity is what we are ointerested in and why that is more important measure of success of the system. 
+Establishing ground truth for such strokes is impossible, because there is no one way to play the stroke. The goal is to produce the similar kind of perceptual response as a human drummer. 
+
+The abstract and conclusion should be revised accordingly after revising the paper.
+The reviewer also suggest to re-consider a proper title that better describes the main content presented in this manuscript.
+
+A. How can we change the title and abstract? What should be the revised pitch?
+
+*****************************************************************************************************************************************
+
+Reviewer #2: General notes
+        *       Papers purpose is clearly laid out and the question is addressed clearly
+        *       Although it is a fairly minor contribution, it  does represent a novel approach to an engineering issue and the problem is well encapsulated and well situated within the field.
+        *       The related work is as comprehensive as the length of paper allows
+        *       I'm not sure the analysis of results allows them to draw the conclusion that the robot plays the drum strokes like a human (they use an inability to reject the null hypothesis in a t test as a sign of equivalence, whereas this just shows indeterminacy). 
+
+A. Very valid about statistical analysis. Can be revised. That can address all three reviewers comments. 
+
+
+Recommendations
+        *       Accept if evaluation method can be clarified or corrected. Recommendations either to use a valid method for measuring statistical equivalence e.g. D. J. Schuirmann's (1987) use of 2 one-sided t tests or tyron and lewis's ICI approach (Tryon, W. W., & Lewis, C. (2008). An inferential confidence interval method of establishing statistical equivalence that corrects Tryon's (2001) reduction factor. Psychological Methods, 13(3), 272-277) or reanalyse the experiment so the hypothesis can be proved using a method of statistical difference where the rejection of the null hypothesis is a valid conclusion
+        *       Minor Improvements
+        ⁃       show a shorter range to get more detail in x axis of plots in section 4. I know they are that long to show the length of the thumb pressure envelope but we really can;t see much variation in the strokes at the moment
+        ⁃       remove figure 6, its unnecessary
+
+B. Can change the plots. Redo the simulations. 
+
+****************************************************************************************************************************************************
+Reviewer #3: The authors propose a generalized physics based model for drum stroke generation for robotic drummers. The evaluation of the model is adequate and rigorous. Results show that the robotic drummer using this model is able to produce a number of strokes basically indistinguishable from human played strokes.
+Even tough the average number of incorrect answers in the listening test is close to ideal, the standard deviation is quite high. The explanation provided in the paper is not fully convincing. Probably the authors in the future should better investigate this result. 
+
+B. Can maybe avoid talking about std deviation. Can suggest a alrge scale user study will be a future undertaking. 
+
+*************************************************************************************************************************************************************
+
+Reviewr 1:
+
+How do we want to state the main technical contribution of the paper? What is the advantage of this approach as opposed to other approaches?
+Bicchi's work can be incorporated and compared and contrasted with our work. Can possible extend the related work section quite a bit, now that the font sizes are small. Maybe more comprehensive. Borrow more from the thesis. 
+
+the authors should clearly indicate the main technical contribution respect to the
+revelant related work. I think we can compare and contrast the other related work as well. 
+
+Section 3 comments from Reviewer can all be addressed. Maybe add more pictures and diagrams. 
+
+Section 4. The motivation for the simulation experiments can be stated clearly. Looking into analysis stuff. Bootstrapping etc... How can we justify not using objective metrics. Won't be possible now, because we need the hardware to compare. Furthermore, establishing a ground truth for objective metric is harder for multiple bounce strokes because there is no one way to play a multiple bounce strokes. 
+
+
+Results
+
+3,5,8,7,4, 7,1,1,9,1, 6, 3, 1, 4,3,3,7,9,1,3,4,3

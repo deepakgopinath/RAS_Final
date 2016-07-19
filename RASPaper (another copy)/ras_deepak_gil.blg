@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ras_deepak_gil.aux
+The style file: elsarticle-num.bst
+Database file #1: ras_deepak_gil_bib.bib
+Warning--empty pages in hajian1997drum
+Warning--empty pages in berdahl2007physically
+Warning--empty pages in kim2014drum
+Warning--empty pages in weinberg2006robot
+Warning--empty pages in weinberg2006jam
+Warning--empty pages in nikolaidis2010playing
+Warning--empty pages in weinberg2009interactive
+Warning--empty pages in degallier2006movement
+Warning--empty publisher in hajian1997characterization
+You've used 19 entries,
+            2937 wiz_defined-function locations,
+            765 strings with 8714 characters,
+and the built_in function-call counts, 4990 in all, are:
+= -- 387
+> -- 172
+< -- 3
++ -- 70
+- -- 51
+* -- 269
+:= -- 658
+add.period$ -- 19
+call.type$ -- 19
+change.case$ -- 17
+chr.to.int$ -- 0
+cite$ -- 28
+duplicate$ -- 188
+empty$ -- 673
+format.name$ -- 66
+if$ -- 1352
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 21
+newline$ -- 65
+num.names$ -- 19
+pop$ -- 174
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 388
+stack$ -- 0
+substring$ -- 93
+swap$ -- 20
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 9
+while$ -- 29
+width$ -- 21
+write$ -- 156
+(There were 9 warnings)
