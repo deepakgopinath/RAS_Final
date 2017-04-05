@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.3)  16 MAY 2016 21:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.3)  8 OCT 2016 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,34 +461,34 @@ File: utxsyc.fd 2000/12/15 v3.1
 <./figures/Fig1.pdf, id=18, 638.385pt x 505.89pt>
 File: ./figures/Fig1.pdf Graphic file (type pdf)
  <use ./figures/Fig1.pdf>
-Package pdftex.def Info: ./figures/Fig1.pdf used on input line 112.
+Package pdftex.def Info: ./figures/Fig1.pdf used on input line 111.
 (pdftex.def)             Requested size: 384.0pt x 304.30054pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 128.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 127.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 128.
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 127.
  [4] [5 <./figures/Fig1.pdf>] <./figures/Fig2.pdf, id=39, 523.9575pt x 374.3987
 4pt>
 File: ./figures/Fig2.pdf Graphic file (type pdf)
 
 <use ./figures/Fig2.pdf>
-Package pdftex.def Info: ./figures/Fig2.pdf used on input line 153.
+Package pdftex.def Info: ./figures/Fig2.pdf used on input line 152.
 (pdftex.def)             Requested size: 384.0pt x 274.39996pt.
  [6 <./figures/Fig2.pdf>]
 <./figures/Fig3.pdf, id=62, 722.7pt x 542.025pt>
 File: ./figures/Fig3.pdf Graphic file (type pdf)
  <use ./figures/Fig3.pdf>
-Package pdftex.def Info: ./figures/Fig3.pdf used on input line 235.
+Package pdftex.def Info: ./figures/Fig3.pdf used on input line 234.
 (pdftex.def)             Requested size: 391.68164pt x 293.76431pt.
 
-Overfull \hbox (7.68164pt too wide) in paragraph at lines 235--236
+Overfull \hbox (7.68164pt too wide) in paragraph at lines 234--235
  [] 
  []
 
@@ -501,7 +501,7 @@ Package epstopdf Info: Source file: <./figures/Fig4.eps>
 (epstopdf)                    size: 56573 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/Fig4-eps-convert
 ed-to.pdf ./figures/Fig4.eps>
-(epstopdf)             \includegraphics on input line 268.
+(epstopdf)             \includegraphics on input line 267.
 Package epstopdf Info: Output file is already uptodate.
 
 <./figures/Fig4-eps-converted-to.pdf, id=96, 498.86375pt x 373.395pt>
@@ -509,7 +509,7 @@ File: ./figures/Fig4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/Fig4-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/Fig4-eps-converted-to.pdf used on input line
- 268.
+ 267.
 (pdftex.def)             Requested size: 324.2576pt x 242.70387pt.
 Package epstopdf Info: Source file: <./figures/Fig5.eps>
 (epstopdf)                    date: 2016-04-24 11:14:50
@@ -519,7 +519,7 @@ Package epstopdf Info: Source file: <./figures/Fig5.eps>
 (epstopdf)                    size: 55737 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/Fig5-eps-convert
 ed-to.pdf ./figures/Fig5.eps>
-(epstopdf)             \includegraphics on input line 275.
+(epstopdf)             \includegraphics on input line 274.
 Package epstopdf Info: Output file is already uptodate.
 
 <./figures/Fig5-eps-converted-to.pdf, id=97, 483.8075pt x 349.305pt>
@@ -527,7 +527,7 @@ File: ./figures/Fig5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/Fig5-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/Fig5-eps-converted-to.pdf used on input line
- 275.
+ 274.
 (pdftex.def)             Requested size: 324.14934pt x 234.03313pt.
  [9]
 Package epstopdf Info: Source file: <./figures/Fig6.eps>
@@ -538,7 +538,7 @@ Package epstopdf Info: Source file: <./figures/Fig6.eps>
 (epstopdf)                    size: 54899 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/Fig6-eps-convert
 ed-to.pdf ./figures/Fig6.eps>
-(epstopdf)             \includegraphics on input line 283.
+(epstopdf)             \includegraphics on input line 282.
 Package epstopdf Info: Output file is already uptodate.
 
 <./figures/Fig6-eps-converted-to.pdf, id=101, 483.8075pt x 349.305pt>
@@ -546,7 +546,7 @@ File: ./figures/Fig6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/Fig6-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/Fig6-eps-converted-to.pdf used on input line
- 283.
+ 282.
 (pdftex.def)             Requested size: 324.14934pt x 234.03313pt.
  [10 <./figures/Fig4-eps-converted-to.pdf> <./figures/Fig5-eps-converted-to.pdf
 >]
@@ -558,7 +558,7 @@ Package epstopdf Info: Source file: <./figures/Fig7.eps>
 (epstopdf)                    size: 72774 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figures/Fig7-eps-convert
 ed-to.pdf ./figures/Fig7.eps>
-(epstopdf)             \includegraphics on input line 301.
+(epstopdf)             \includegraphics on input line 300.
 Package epstopdf Info: Output file is already uptodate.
 
 <./figures/Fig7-eps-converted-to.pdf, id=125, 490.83376pt x 372.39125pt>
@@ -566,7 +566,7 @@ File: ./figures/Fig7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./figures/Fig7-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures/Fig7-eps-converted-to.pdf used on input line
- 301.
+ 300.
 (pdftex.def)             Requested size: 328.8569pt x 249.50084pt.
  [11 <./figures/Fig6-eps-converted-to.pdf>] [12 <./figures/Fig7-eps-converted-t
 o.pdf>] [13] [14]
@@ -574,25 +574,25 @@ o.pdf>] [13] [14]
 File: ./figures/deg.jpg Graphic file (type jpg)
 
 <use ./figures/deg.jpg>
-Package pdftex.def Info: ./figures/deg.jpg used on input line 412.
+Package pdftex.def Info: ./figures/deg.jpg used on input line 411.
 (pdftex.def)             Requested size: 96.0pt x 115.36136pt.
  <./figures/gilw.jpg, id=163, 229.85875pt x 301.125pt>
 File: ./figures/gilw.jpg Graphic file (type jpg)
 
 <use ./figures/gilw.jpg>
-Package pdftex.def Info: ./figures/gilw.jpg used on input line 423.
+Package pdftex.def Info: ./figures/gilw.jpg used on input line 422.
 (pdftex.def)             Requested size: 92.16211pt x 120.73732pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--427
+Underfull \hbox (badness 10000) in paragraph at lines 417--426
 
  []
 
 [16 <./figures/deg.jpg> <./figures/gilw.jpg>] (./ras_deepak_gil.aux) ) 
 Here is how much of TeX's memory you used:
- 4361 strings out of 495028
- 57434 string characters out of 6181497
+ 4362 strings out of 495028
+ 57452 string characters out of 6181497
  121232 words of memory out of 5000000
- 7448 multiletter control sequences out of 15000+600000
+ 7449 multiletter control sequences out of 15000+600000
  35878 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,10n,30p,1111b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -606,7 +606,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on ras_deepak_gil.pdf (16 pages, 908213 bytes).
+Output written on ras_deepak_gil.pdf (16 pages, 908190 bytes).
 PDF statistics:
  199 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams
